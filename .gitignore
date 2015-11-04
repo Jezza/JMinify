@@ -63,7 +63,8 @@ $RECYCLE.BIN/
 *.iws
 *.ipr
 .idea
+.compiled
 
-# Project specific
-./build
+# Gradle
+/build
 .gradle
