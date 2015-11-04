@@ -1,2 +1,2 @@
-# JScripper
-Javascript tokeniser built in Java.
+# JMinify
+A simple Javascript tokeniser and minifier built in Java.
