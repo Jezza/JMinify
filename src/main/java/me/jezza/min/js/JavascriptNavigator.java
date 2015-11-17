@@ -1,11 +1,11 @@
-package me.jezza.min;
+package me.jezza.min.js;
 
 import me.jezza.min.buffer.CharBuffer;
 import me.jezza.min.buffer.IndexBuffer;
 
 import java.util.NoSuchElementException;
 
-import static me.jezza.min.ElementTypes.*;
+import static me.jezza.min.js.ElementTypes.*;
 
 /**
  * @author jezza
@@ -194,10 +194,15 @@ public class JavascriptNavigator {
 		switch (type()) {
 			case ElementTypes.NAMESPACE:
 				return "NAMESPACE";
+			case ElementTypes.NUMBER:
+				return "NUMBER";
+			case ElementTypes.STRING:
+				return "STRING";
+			//
 			case ElementTypes.BODY_START:
-				return "METHOD_START";
+				return "BODY_START";
 			case ElementTypes.BODY_END:
-				return "METHOD_END";
+				return "BODY_END";
 			case ElementTypes.FUNCTION_START:
 				return "FUNCTION_START";
 			case ElementTypes.FUNCTION_END:
@@ -206,24 +211,45 @@ public class JavascriptNavigator {
 				return "ARRAY_START";
 			case ElementTypes.ARRAY_END:
 				return "ARRAY_END";
+			//
 			case ElementTypes.COLON:
 				return "COLON";
+			case ElementTypes.QUESTION:
+				return "QUESTION";
 			case ElementTypes.SEMI_COLON:
 				return "SEMI_COLON";
 			case ElementTypes.COMMA:
 				return "COMMA";
 			case ElementTypes.PERIOD:
 				return "PERIOD";
+			//
 			case ElementTypes.EQUAL:
 				return "EQUAL";
 			case ElementTypes.ADD:
 				return "ADD";
 			case ElementTypes.SUB:
 				return "SUB";
+			case ElementTypes.MUL:
+				return "MUL";
 			case ElementTypes.DIV:
 				return "DIV";
-			case ElementTypes.STRING:
-				return "STRING";
+			//
+			case ElementTypes.REM:
+				return "REM";
+			case ElementTypes.AMP:
+				return "AMP";
+			case ElementTypes.PIPE:
+				return "PIPE";
+			case ElementTypes.CAR:
+				return "CAR";
+			case ElementTypes.LESS:
+				return "LESS";
+			case ElementTypes.GREAT:
+				return "GREAT";
+			case ElementTypes.NOT:
+				return "NOT";
+			case ElementTypes.TILDE:
+				return "TILDE";
 			default:
 				return "UNDEFINED";
 		}

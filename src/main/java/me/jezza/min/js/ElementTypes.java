@@ -1,4 +1,4 @@
-package me.jezza.min;
+package me.jezza.min.js;
 
 /**
  * @author jezza
@@ -9,6 +9,7 @@ public class ElementTypes {
 	public static final byte NAMESPACE = 1; // a block of characters with no defined meaning.
 	public static final byte NUMBER = 2; // 1
 	public static final byte STRING = 3; // " or '
+	public static final byte COMMENT = 4; // Line or block comments.
 
 	// Method stuff
 	public static final byte BODY_START = 10; // {
@@ -34,9 +35,9 @@ public class ElementTypes {
 	public static final byte REM = 40; // %
 	public static final byte AMP = 41; // &
 	public static final byte PIPE = 42; // |
-	public static final byte CARET = 43; // ^
-	public static final byte LESSER = 44; // <
-	public static final byte GREATER = 45; // >
+	public static final byte CAR = 43; // ^
+	public static final byte LESS = 44; // <
+	public static final byte GREAT = 45; // >
 	public static final byte NOT = 46; // !
 	public static final byte TILDE = 47; // ~
 
